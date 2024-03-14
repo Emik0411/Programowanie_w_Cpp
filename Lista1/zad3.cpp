@@ -7,7 +7,7 @@ double down(double N)
     double a=0.0;
     for(int i=1;i<=N;i++)
     {
-        a=a+1.0/i;
+        a += 1.0/i;
     }
     return a;
 }
@@ -17,14 +17,14 @@ double up(double N)
     double a=0.0;
     for(int i=N;i>=1;i--)
     {
-        a=a+1.0/i;
+        a += 1.0/i;
     }
     return a;
 }
 
 double roznica(double N)
 {
-    return up(N)-down(N);
+    return up(N) - down(N);
 }
 
 
@@ -34,7 +34,7 @@ float downf(float N)
     float a=0;
     for(int i=1;i<=N;i++)
     {
-        a=a+1.0/i;
+        a += 1.0/i;
     }
     return a;
 }
@@ -44,7 +44,7 @@ float upf(float N)
     float a=0;
     for(int i=N;i>=1;i--)
     {
-        a=a+1.0/i;
+        a += 1.0/i;
     }
     return a;
 }

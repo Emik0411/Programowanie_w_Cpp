@@ -6,11 +6,12 @@ using namespace std;
 int main()
 {
     double t0=1.0/sqrt(3);
-    long double ti=0.0;
+    double ti=0.0;
 
+    cout.precision(15);
     cout<<"(a)"<<endl;
 
-    long double a=0.0;
+    double a=0.0;
     for(int i=0;i<=30;i++)
     {
         if(i==0)
@@ -29,7 +30,7 @@ int main()
 
     cout<<endl<<"(b)"<<endl;
 
-    long double b=0.0;
+    double b=0.0;
     for(int i=0;i<=30;i++)
     {
         if(i==0)
