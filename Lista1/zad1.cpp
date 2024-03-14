@@ -5,31 +5,32 @@ using namespace std;
 
 int main()
 {
-    double a=0.0;
-    for(int j=1;j<=1000000;j++)
+    double a = 0.0;
+    for(int j=1; j <= 1'000'000; j++)
     {
-        a=a+1.0*((pow((-1),(j+1)))/(2*j-1));
+        a += pow(-1.0, j + 1)/(2.0 * j - 1);
     }
-    a=a*4;
+    a *= 4.0;
 
-    double b=1.0;
-    for(int j=1;j<=1000000;j++)
+    double b = 1.0;
+    for(int j = 1; j <= 1'000'000; j++)
     {
-        b=b*((4.0*j*j)/(4.0*j*j-1.0));
+        b *= (4.0 * j * j)/(4.0 * j * j - 1.0);
     }
-    b=b*2.0;
+    b *= 2.0;
 
-    double c=0.0;
-    for(int j=1;j<=1000000;j++)
+    double c = 0.0;
+    for(int j = 1; j <= 1000000; j++)
     {
-        c=c+1.0*(1/(pow((2*j-1),2)));
+        c += 1.0/pow(2.0 * j - 1, 2);
     }
-    c=pow(c*8,0.5);
+    c = sqrt(8.0 * c);
 
-    cout<<"(a) "<<a<<endl;
-    cout<<"(b) "<<b<<endl;
-    cout<<"(c) "<<c<<endl;
-    cout<<"(π) "<<M_PI<<endl;
+    cout.precision(14);
+    cout << "(a) " << a << endl;
+    cout << "(b) " << b << endl;
+    cout << "(c) " << c << endl;
+    cout << "(π) " << M_PI << endl;
 
-    return 0;
+    return EXIT_SUCCESS;
 }
