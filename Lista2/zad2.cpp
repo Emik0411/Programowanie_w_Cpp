@@ -3,21 +3,39 @@
 
 using namespace std;
 
+int sortuj(const void* a, const void* b)
+{
+    int arg1 = *(const int*)a;
+    int arg2 = *(const int*)b;
+
+    if(arg1 % 2 == 0 && arg2 % 2 == 0)
+    {
+        return arg1 - arg2;
+    }
+    if(arg1 % 2 == 1 && arg2 % 2 == 1)
+    {
+        return arg2 - arg1;
+    }
+
+    if(arg1 % 2 == 0)
+    {
+        return -1;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
 int main()
 {
-    int N=8;
-    int tablica[N]={1,4,7,2,5,9,2,8};
+    const int rozmiar = 8;
+    int tablica[rozmiar] = {1, 4, 7, 2, 5, 9, 2, 8};
 
-    for(int i=0;i<N;i++)
+    qsort(tablica, rozmiar, sizeof(int), sortuj);
+
+    for(int i = 0; i < rozmiar; i++)
     {
-        cout<<tablica[i]<<", ";
+        cout << tablica[i] << " ";
     }
-
-
-    cout<<endl<<"Posortowane:"<<endl;
-    for(int i=0;i<N;i++)
-    {
-        cout<<tablica[i]<<", ";
-    }
-    return 0;
 }
