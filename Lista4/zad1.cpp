@@ -3,7 +3,7 @@
 
 using namespace std;
 
-double operator *(vector<double> v, vector<double> w)
+double operator*(const vector<double> & v, const vector<double> & w)
 {
     double liczba = 0;
     for(int i = 0; i < sizeof(v); i++)
