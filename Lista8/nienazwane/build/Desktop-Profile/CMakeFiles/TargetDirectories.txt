@@ -1,0 +1,4 @@
+/home/emik0411/Pulpit/Programowanie_w_Cpp/Lista8/nienazwane/build/Desktop-Profile/CMakeFiles/zad1.dir
+/home/emik0411/Pulpit/Programowanie_w_Cpp/Lista8/nienazwane/build/Desktop-Profile/CMakeFiles/zad2.dir
+/home/emik0411/Pulpit/Programowanie_w_Cpp/Lista8/nienazwane/build/Desktop-Profile/CMakeFiles/edit_cache.dir
+/home/emik0411/Pulpit/Programowanie_w_Cpp/Lista8/nienazwane/build/Desktop-Profile/CMakeFiles/rebuild_cache.dir

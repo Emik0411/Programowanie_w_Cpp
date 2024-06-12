@@ -1,0 +1,5 @@
+zad 2
+a. Działanie tego programu zależy od tego, przed zmianą program nie uruchomił się a po zmianie program działał. W pierwiej pętli zaczynaliśmy od większych liczb, przez co "/n" nie działało i potrzebowaliśmy opróżnić bufor wyjścia przy użyciu std::endl aby program działał poprawnie.
+b. W Qt Creator debuger jest uruchamiany przez przycisk Debug. Błąd polegał na tym, że zamiast unsigned int był sam int w funkcji. Przez co pętla osiągała większe wartości niż funkcja (w pętli unsigned int, w funckji int).
+c. W funkcji silnia odwołuje się do tej funkcji tylko raz, a w funkcji fibonacci 2 razy. Przez to że w funkcji fibonacci odwołuje się do funkcji więcej razy to działa wolniej.
+e. Tryb debug zawiera różne informacje o zmiennych, a release wykonuje się do zakńczenia programu, aby zwiększyć wydajność.
